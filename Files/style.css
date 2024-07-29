@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    color: rgba(3, 3, 2, 0.934);
+}
+
+header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 90%;
+    background: linear-gradient(120deg, rgb(237, 233, 235) 0%, rgb(9, 39, 42) 35%, rgba(25, 198, 198, 0.677) 98%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#outer-box {
+    width: 100vw;
+    height: 75vh;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.expenses-list {
+    padding: 10px;
+    height: 100%;
+    width: 60%;
+    box-shadow: 0px 8px 8px black, 0px -8px 8px rgb(6, 6, 6);
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1.5px solid rgb(10, 92, 86);
+    padding: 5px;
+    text-align: left;
+}
+
+tbody td,
+tfoot td {
+    padding: .5rem;
+    font-weight: bold;
+}
+
+th {
+    background-color: rgba(8, 72, 92, 0.664);
+    color: rgb(10, 9, 9);
+}
+
+.delete-btn {
+    padding: 5px 8px;
+    background-color: rgb(128, 34, 20);
+    color: rgba(255, 255, 255, 0.816);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+form {
+    height: 100%;
+    width: 40%;
+    padding: 15px;
+    color: #060606;
+    font-weight: bolder;
+    box-shadow: 5px 5px 8px rgb(12, 12, 12), inset 0px 0px 8px rgb(36, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputs,
+button {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: .5vh;
+    background-color: transparent;
+    box-shadow: 5px 5px 5px rgba(23, 31, 34, 0.814);
+    text-align: center;
+    font-weight: 600;
+    outline: 10px rgb(152, 81, 73);
+    cursor: pointer;
+}
